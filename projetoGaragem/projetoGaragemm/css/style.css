@@ -1,0 +1,816 @@
+@font-face {
+    font-family: "adlery";
+    src: url("../font/Adlery_TRIAL.ttf");
+}
+
+body{
+    margin: 0;
+}
+
+#menu1 {
+    background: #0CC0DF;
+    box-shadow: 0 2px 16px 0 rgba( 31, 38, 135, 0.50 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 20px;
+    height: 80px;
+    position: relative;
+    z-index: 3;
+  }
+
+  #menu1 p{
+    font-size: 2.0em;
+    font-family: adlery;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+
+  #formm {
+    font-size: 1.0em;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #0cbfdf93;
+  }
+
+  main{
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
+  nav ul li img{
+      width: 50px;
+  }
+
+  nav{
+      display: flex;
+      align-items: center;
+  }
+  
+  .f1{
+    position: relative;
+    z-index: 1; 
+  }
+  
+  #menu2 {
+    border-bottom-right-radius: 7px;
+    background: rgba( 0, 0, 0, 0.4);
+    box-shadow: 0 2px 16px 0 rgba( 31, 38, 135, 0.50 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    background: #0cbfdf;
+    width: 150px;
+    height: 0px;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    padding-left: 10px;
+  }
+
+  #menu2 a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+    display: none;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  
+  #menu2 ul li {
+    list-style: none;  
+  }
+  
+  #menu2.active{
+    height: 140px;
+    }
+
+    #menu2.active a{
+        display: block;
+    }
+
+  #menu2 ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    }
+  
+  
+  #logo {
+    margin-left: 100px;
+  }
+  
+  #abmenu {
+    color:#fff;
+    border: none;
+    border-radius: 1mm;
+    background: #0CC0DF;
+    font-size: 30px;
+    font-family: Kanit;
+  }
+  
+  header nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding-bottom: 45px;
+  }
+  
+  .atg {
+    animation-name: dsc;
+    animation-duration: 0.5s;
+    width: 265px;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #DCDCDC;  
+    border-radius: 5px;
+    border: 2px solid #A9A9A9;
+  };
+  
+  #txt p a {
+    display: inline-block;
+  }
+  
+  #k {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.2em;
+    color: #000;
+  }
+  
+  #l {
+    margin-top: 50px;
+  }
+
+  #l p {
+    font-family: 'Kanit', sans-serif;
+  }
+
+  label {
+    font-family: 'Kanit', sans-serif;
+
+  }
+
+  input[type="text"]{
+    border-radius: 5px;
+    border: 2px solid #50CDE3;
+    width: 90%;
+    height: 30px;
+  }
+  
+  select {
+    padding: 7px;
+    background: #0CC0DF;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Varela Round', Sans-Serif;
+    width: 150px;
+    height: 30px;
+  }
+  
+  select:focus {
+    outline: none;
+  }
+  
+  select:hover {
+    background: #000;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  #modeloplaca {
+    animation-name: dsc;
+    animation-duration: 0.5s;
+    display: none;
+    margin-top: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #0cbfdf93;
+  }
+  
+  #modeloplaca a {
+    font-family: 'Kanit', Sans-Serif;
+    font-size: 1.0em;
+    margin-left: 8px;
+  }
+
+  #abc {
+    margin-top: 8px;
+  }
+  
+  #cba {
+    margin-top: 8px;
+  }
+  
+  .bt {
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 7px 20px;
+    font-family: 'Titillium Web', Sans-Serif;
+  }
+  
+  .bt:hover {
+    background: #696969;
+    color: #fff;
+  }
+  
+  .btt {
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 7px 20px;
+    font-family: 'Titillium Web', Sans-Serif;
+  }
+  
+  .btt:hover {
+    background: #696969;
+    color: #fff;
+  }
+  
+  #hora {
+    margin-top: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #0cbfdf93;
+  }
+  
+  #hora a {
+    font-family: 'Kanit', Sans-Serif;
+    font-size: 1.0em;
+  }
+  
+  #hr {
+    margin-top: 17px;
+  }
+  
+  #resul {
+    margin-top: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+  }
+  
+  #resul a {
+    font-family: 'Kanit', Sans-Serif;
+  }
+  
+  @keyframes expandir {
+			0% {
+			  top: -60px;
+        opacity: 0;
+        transform: scale(1.0);
+			}
+      100% {
+        top: 0;
+        opacity: 1;
+        transform: scale(1.3);
+		}
+  }
+  
+  #u {
+    font-size: 1.7em;
+    font-family: adlery;
+    position: relative;
+    opacity: 0;
+    top: -50px;
+    animation-name: expandir;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    color: #21555e;
+  }
+  
+  
+  #mo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  h2 {
+    width: 300px;
+    font-family: 'Varela Round', Sans-Serif;
+    font-size: 1.0em;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #000;
+  }
+
+  #mi {
+    color: #696969;
+    font-size: 0.9em;
+  }
+  
+  #txt {
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 0.9em;
+  }
+  
+  #txt a {
+    text-decoration: none;
+    color: Blue;
+  }
+  
+  #txt i {
+    font-family: sans-serif;
+  }
+  
+  #menus {
+    position: fixed;
+    z-index: 900;
+    width: 100%;
+  }
+  
+  @keyframes blu{
+    0% {filter: blur(0.0px);
+    }
+    100% {filter: blur(3.5px);
+    }
+  }
+  
+  .blur {
+    filter: blur(3.5px);
+    animation-name: blu;
+    animation-duration: 1.5s;
+  }
+  
+  #tudo{
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  
+@keyframes borda {
+
+    0% {
+
+      background: #ADD8E6;
+    }
+    25% {
+      background: #98FB98;
+    }
+    50% {
+      background: #DDA0DD;
+    }
+    75% {
+      background: #E6E6FA;
+    }
+    100% {
+      background: #ADD8E6;
+    }
+    
+  }
+  
+  @keyframes borda2 {
+    0% {
+      background: #98FB98; #ADD8E6;
+    }
+    25% {
+      background: #ADD8E6; #98FB98;
+    }
+    50% {
+      background: #E6E6FA;
+    }
+    75% {
+      background: #DDA0DD;
+    }
+    100% {
+      background: #98FB98;
+    }
+    
+  }
+  
+  @keyframes borda3 {
+    0% {
+      background: #DDA0DD;
+    }
+    25% {
+      background: #E6E6FA;
+    }
+    50% {
+      background: #ADD8E6;
+    }
+    75% {
+      background: #98FB98;
+    }
+    100% {
+      background: #DDA0DD;
+    }
+    
+  }
+  
+  @keyframes borda4 {
+    0% {
+      background: #E6E6FA;
+    }
+    25% {
+      background: #DDA0DD;
+    }
+    50% {
+      background: #98FB98;
+    }
+    75% {
+      background: #ADD8E6;
+    }
+    100% {
+      background: #E6E6FA;
+    }
+    
+  }
+  
+  
+  
+  .lu {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    background: #ADD8E6;
+    padding: 10px ;
+    box-sizing: border-box;
+    border-radius: 8px;
+    animation-name: borda;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+     box-shadow: 0 4px 16px 0 rgba( 31, 38, 135, 0.50 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+  }
+  
+  .lu a {
+    font-family: 'Kanit', Sans-Serif;
+    font-size: 1.2em;
+  }
+  
+  .lu p {
+    font-family: 'Varela Round', Sans-Serif;
+  }
+  
+  .lu button {
+    margin-top: 10px;
+  }
+  
+  .is {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    background: #98FB98;
+    padding: 10px ;
+    box-sizing: border-box;
+    border-radius: 8px;
+    animation-name: borda2;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+     box-shadow: 0 4px 16px 0 rgba( 31, 38, 135, 0.50 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+  }
+  
+  .is a {
+    font-family: 'Kanit', Sans-Serif;
+    font-size: 1.2em;
+  }
+  
+  .is p {
+    font-family: 'Varela Round', Sans-Serif;
+  }
+  
+  .ar {
+
+    margin-top: 20px;
+
+    width: 100%;
+    height: auto;
+    background: #DDA0DD;
+    padding: 10px ;
+    box-sizing: border-box;
+    border-radius: 8px;
+    animation-name: borda3;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+     box-shadow: 0 4px 16px 0 rgba( 31, 38, 135, 0.50 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+  }
+  
+  .ar a {
+    font-family: 'Kanit', Sans-Serif;
+    font-size: 1.2em;
+  }
+  
+  .ar p {
+    font-family: 'Varela Round', Sans-Serif;
+  }
+  
+  .an {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    background: #E6E6FA;
+    padding: 10px ;
+    box-sizing: border-box;
+    border-radius: 8px;
+    animation-name: borda4;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+     box-shadow: 0 4px 16px 0 rgba( 31, 38, 135, 0.50 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+  }
+  
+  .an a {
+    font-family: 'Kanit', Sans-Serif;
+    font-size: 1.2em;
+  }
+  
+  .an p {
+    font-family: 'Varela Round', Sans-Serif;
+  }
+  
+  .ns{
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-family: 'Titillium Web', sans-serif;
+    border: none;
+    background: #000;
+    color: #fff;
+    box-shadow: 0 2px 16px 0 rgba( 31, 38, 135, 0.50 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+  }
+  
+  .ns a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .ns:hover {
+    background: #4169E1;
+    color: #fff;
+  }
+  
+  
+  .abc{
+    background-color: #0993ab; 
+    font-family: 'Varela Round', Sans-Serif;
+    color: #fff;
+   }
+  
+  .abd { 
+    background-color: #0bbede;
+    font-family: 'Varela Round', Sans-Serif;
+    color: #fff;
+    } 
+  
+  .a {
+    background-color: #E0FFFF; 
+    color: #00BFFF;
+    font-family: 'Kanit', Sans-Serif;
+    }
+  
+  th, td {
+    padding: 0.5em; 
+    text-align: center; 
+    width:200px; 
+  }
+  
+  th {
+    font-weight: bold; 
+  } 
+  
+  table {
+    width: 330px;
+    border-collapse: collapse;
+    border-color: #fff; 
+    position: absolute;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 60px;
+    box-shadow: 0 4px 16px 0 rgba( 31, 38, 135, 0.50 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+  }
+  
+  #cent {
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  
+  #cent a {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2em;
+    position: absolute;
+    margin-bottom: 30px;
+  }
+  
+  #menu1 i {
+    font-size: 0.8em;
+    color: #fff;
+  }
+  
+  @keyframes subir {
+			0% {
+			  bottom: -40px;
+        opacity: 0;
+        transform: scale(1.0);
+			}
+      100% {
+        bottom: 0;
+        opacity: 1;
+        transform: scale(1.3);
+		}
+  }
+  
+  #yo {
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 20px;
+    display: flex;
+    text-align: center;
+    width: 290px;
+    color: #4F4F4F;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Titillium Web', Sans-Serif;
+    font-size: 0.8em;
+    position: relative;
+    animation-name: subir;
+    animation-duration: 1.0s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  
+  @keyframes expandir2 {
+
+			0% {
+
+			  top: -60px;
+        opacity: 0;
+        transform: scale(0.7);
+			}
+      100% {
+        top: 0;
+        opacity: 1;
+        transform: scale(1.0);
+		}
+  }
+  
+  #qm {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    justify-content: center;
+    display: flex;
+    animation-name: expandir2;
+    animation-duration: 1.5s;
+  }
+  
+  #qm a {
+    font-size: 1.3em;
+    font-family: 'Titillium Web', Sans-Serif;
+    text-align: center;
+  }
+  
+  @keyframes fogo{
+    0% {
+      color: #4B0082;
+    }
+    25% {
+      color: #8B008B;
+    }
+    50% {
+      color: #800000;
+    }
+    100% {
+      color: #4B0082;
+    }
+  }
+  
+  .mds {
+    color: #4B0082;
+    animation-name: fogo; 
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+  }
+  
+  #bti {
+    color: #fff;
+    background: #0CC0DF;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 7px 20px;
+    font-family: 'Titillium Web', Sans-Serif;
+  }
+  
+  #btj {
+    color: #fff;
+    background: #0CC0DF;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 7px 20px;
+    font-family: 'Titillium Web', Sans-Serif;
+  }
+  
+  @keyframes dsc {
+    0% {
+      top: -50px;
+      opacity: 0.1;
+      transform: scale(0.7);
+    }
+    100% {
+      top: 0px;
+      opacity: 1;
+      transform: scale(1.0);
+    }
+  }
+  
+  #rst {
+    display: none;
+    animation: dsc;
+    animation-duration: 1.0s;
+    position: relative;
+  }
+  
+  #resul {
+    display: none;
+    animation-name: dsc;
+    animation-duration: 0.6s;
+  }
+  
+  #bto {
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 7px 20px;
+    font-family: 'Titillium Web', Sans-Serif;
+  }
+  
+  #bti:hover {
+    background: #000;
+  }
+  
+  #bto:hover {
+    background: #000;
+    color: #fff;
+  }
+  
+  @keyframes prog {
+    0% {
+      color: #0000CD;
+    }
+    25% {
+      color: #8B008B;
+    }
+    50% {
+      color: #800000;
+    }
+    75% {
+      color: #008080;
+    }
+    100% {
+      color: #0000CD;
+    }
+  }
+  
+  #qm b {
+    color: #0000CD;
+    animation-name: prog;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  
+  .z {
+  z-index: 9;
+  margin: 0;
+  padding: 0;
+  height: 1px;
+  width: 1px;
+  background: #DCDCDC;
+  border: none;
+ }
+ 

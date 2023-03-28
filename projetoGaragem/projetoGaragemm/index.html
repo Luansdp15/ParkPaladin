@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no; viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+<script src="components/loader.js"></script>
+<script src="lib/onsenui/js/onsenui.min.js"></script>
+<script type="text/javascript" src="components/script.js"></script>
+<link rel="stylesheet" href="components/loader.css">
+<link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+<link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Kanit:wght@600&family=Nunito&family=Titillium+Web:wght@700&family=Varela+Round&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="menus">
+    <div id="menu1">
+            <button onclick="mmenuu()" id="abmenu">
+            <i class="fa fa-bars"></i>
+            </button>
+            <p>ParkPaladin</p>
+            <div></div>
+    </div>   
+        <div id="menu2">
+            <a><p style="text-decoration:underline;">Página inicial</p></a>
+            <a href="tbpreco.html"><p>Tabela de preços</p></a>
+            <a href="qmsomos.html"><p>Quem somos</p></a>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="tudo">
+        
+        <div class="f1"> 
+
+                    <div id="mo"><a id="u">Bem-vindo ao ParkPaladin !</a></div>
+                    <br>
+                <b><a id="k">Olá motorista! Para comprar uma vaga no estacionamento, preencha todos 
+                  os dados abaixo.</a></b>
+                  
+                  
+                  
+                <form id="l">
+                  
+                    <div id="formm">
+                <label for="nm_motorista">Insira o seu nome completo:</label> 
+                <br>
+                <br>
+                
+                <input type="text" id="nm_motorista" placeholder=" Insira aqui" name="nm_motorista" oninput="apaga()" onblur="coisarnome()" required> 
+                
+                <br> 
+                <p>Selecione a categoria do veículo:</p> 
+                <select id="ct"> 
+                    <option value="subcompacto">  Subcompacto</option> 
+                    <option value="compacto">  Compacto</option> 
+                    <option value="hatch">  Hatch</option> 
+                    <option value="sedan">  Sedan</option> 
+                    <option value="suv">  SUV</option> 
+                    <option value="pickup">  Pick-up</option> 
+                </select> 
+                
+                </form>
+                </div>
+                
+                
+                
+                
+                
+                <div id="modeloplaca"> 
+                    <a>Selecione o modelo da placa:</a> 
+                    <br> 
+                    <button onclick="mostrarform()" class="bt">Modelo antigo</button> 
+                    <button onclick="mostrarform2()" class="bt">Modelo Mercosul</button> 
+                    <br> 
+                    <div id="pl1"></div> 
+                    </div>
+                 </div> 
+            
+         <div id="rst">
+            
+            
+                 
+                 <div id="hora">
+                 <a>Quantidade de horas que o veículo irá permanecer no estacionamento:</a>
+                 <br>
+                 
+            <select id="hr">
+            <option value="1h"> 1 Hora </option>
+            <option value="2h"> 2 Horas </option>
+            <option value="3h"> 3 Horas </option>
+            </select>
+                  </div>
+        <button onclick="calculo()" id="bto">Enviar</button> 
+        <br> 
+        <br>
+        <br>
+    </div>
+    
+    <div id="resul">
+        <a>Resultado:</a>
+        <h2><a id="mi">O seu resultado irá aparecer aqui</a></h2> 
+        <div id="b1"> </div> 
+    </div>
+        <div id="txt">
+            <i>*Caso tenha alguma dúvida em relação ao valor cobrado, consulte a <a href="tbpreco.html">tabela de preços</i>.</p>
+        </div>
+    </div>
+</body>
+</html>
